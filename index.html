@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sambeck Mining Ltd.| Pioneering Sustainable Resource Extraction</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #0f2027 0%,rgb(0, 0, 0) 50%,rgb(42, 20, 53) 100%);
+        }
+        .mining-truck-path {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+           
+        }
+        .parallax-section {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .glow-text {
+            text-shadow: 0 0 10px rgba(100, 200, 255, 0.7);
+        }
+        .particle-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-100">
+    <!-- Vanta.js Background -->
+    <div id="vanta-bg" class="fixed inset-0 z-0"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-black bg-opacity-80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <img src="SamBeck Mining.png" alt="SamBeck Logo" class="w-12 h-12 object-contain" />
+                    <span class="ml-3 text-2xl font-bold text-white">SAMBECK MINING LTD.</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-8">
+                        <a href="#" class="text-white hover:text-yellow-400 px-3 py-2 text-sm font-medium transition-all duration-300">Home</a>
+                        <a href="#operations" class="text-white hover:text-yellow-400 px-3 py-2 text-sm font-medium transition-all duration-300">Operations</a>
+                        <a href="#technology" class="text-white hover:text-yellow-400 px-3 py-2 text-sm font-medium transition-all duration-300">Technology</a>
+                        <a href="#sustainability" class="text-white hover:text-yellow-400 px-3 py-2 text-sm font-medium transition-all duration-300">Sustainability</a>
+                        <a href="#contact" class="text-white hover:text-yellow-400 px-3 py-2 text-sm font-medium transition-all duration-300">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with 3D Animation -->
+    <section class="relative hero-gradient min-h-screen flex items-center justify-center overflow-visible pt-20">
+        <div class="particle-bg" id="particles-js"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 z-10">
+            <div class="text-center" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 glow-text">
+                    <span class="block">Unlocking Mineral Potential </span>
+                    <span class="text-yellow-400">Through Precision and Integrity</span>
+                </h1>
+                <p class="text-xl md:text-2xl max-w-3xl mx-auto mb-10" data-aos="fade-up" data-aos-delay="300">
+                    Pioneering sustainable resource extraction through cutting-edge technology and responsible practices.
+                </p>
+                <div class="flex justify-center space-x-4" data-aos="fade-up" data-aos-delay="500">
+                    <a href="#operations" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105">
+                        Explore Our Mines
+                    </a>
+                    <a href="#contact" class="bg-transparent hover:bg-white hover:text-black border-2 border-white text-white font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+            
+
+
+
+
+<!-- Card Carousel -->
+<div class="mt-20 relative w-full overflow-hidden flex justify-center">
+  <div class="flex space-x-6 animate-swing">
+    
+    <!-- Card 1 -->
+    <div class="group relative w-[300px] h-[350px] bg-gradient-to-br from-yellow-50 to-gray-100 rounded-2xl shadow-2xl overflow-hidden transform transition-all duration-500 hover:scale-105 hover:rotate-1">
+      
+      <!-- 🔥 Glow Box (edit colors here) -->
+      <div class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-yellow-400 via-orange-500 to-yellow-700 opacity-0 group-hover:opacity-100 blur-xl transition duration-500"></div>
+      
+      <div class="relative z-10 flex flex-col items-center justify-center h-full p-6">
+        <!-- ✅ Working Truck Image -->
+        <img src="mining truck.jpeg"
+          alt="Mining Truck"
+          class="max-h-[180px] object-contain rounded-xl shadow-lg transform transition-transform duration-700 group-hover:scale-110 group-hover:rotate-2" />
+        
+        <h2 class="mt-4 text-xl font-bold text-gray-800 group-hover:text-yellow-700 transition">Mining Truck</h2>
+        <p class="text-sm text-gray-500 text-center mt-1 group-hover:text-gray-700 transition">
+          Heavy-duty mining vehicle
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="group relative w-[300px] h-[350px] bg-gradient-to-br from-blue-50 to-gray-100 rounded-2xl shadow-2xl overflow-hidden transform transition-all duration-500 hover:scale-105 hover:rotate-1">
+      
+      <!-- 🔥 Glow Box (edit colors here) -->
+      <div class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-blue-400 via-cyan-500 to-blue-700 opacity-0 group-hover:opacity-100 blur-xl transition duration-500"></div>
+      
+      <div class="relative z-10 flex flex-col items-center justify-center h-full p-6">
+        <!-- ✅ Working Excavator Image -->
+        <img src="excavator.jpg"
+          alt="Excavator"
+          class="max-h-[180px] object-contain rounded-xl shadow-lg transform transition-transform duration-700 group-hover:scale-110 group-hover:rotate-2" />
+        
+        <h2 class="mt-4 text-xl font-bold text-gray-800 group-hover:text-blue-700 transition">Excavator</h2>
+        <p class="text-sm text-gray-500 text-center mt-1 group-hover:text-gray-700 transition">
+          Digging & extraction machine
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="group relative w-[300px] h-[350px] bg-gradient-to-br from-green-50 to-gray-100 rounded-2xl shadow-2xl overflow-hidden transform transition-all duration-500 hover:scale-105 hover:rotate-1">
+      
+      <!-- 🔥 Glow Box (edit colors here) -->
+      <div class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-green-400 via-emerald-500 to-green-700 opacity-0 group-hover:opacity-100 blur-xl transition duration-500"></div>
+      
+      <div class="relative z-10 flex flex-col items-center justify-center h-full p-6">
+        <!-- ✅ Working Mining Field Image -->
+        <img src="mining-field.jpeg"
+          alt="Mining Field"
+          class="max-h-[180px] object-contain rounded-xl shadow-lg transform transition-transform duration-700 group-hover:scale-110 group-hover:rotate-2" />
+        
+        <h2 class="mt-4 text-xl font-bold text-gray-800 group-hover:text-green-700 transition">Mining Field</h2>
+        <p class="text-sm text-gray-500 text-center mt-1 group-hover:text-gray-700 transition">
+          Open-pit mining operations
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Swing Animation -->
+<style>
+@keyframes swing {
+  0%   { transform: translateX(0); }
+  25%  { transform: translateX(-40px); }
+  50%  { transform: translateX(0); }
+  75%  { transform: translateX(40px); }
+  100% { transform: translateX(0); }
+}
+.animate-swing {
+  animation: swing 12s ease-in-out infinite; /* slow swinging */
+}
+</style>
+
+  </div>
+</div>
+
+<!-- Swing Animation -->
+<style>
+@keyframes swing {
+  0%   { transform: translateX(0); }
+  25%  { transform: translateX(-40px); }
+  50%  { transform: translateX(0); }
+  75%  { transform: translateX(40px); }
+  100% { transform: translateX(0); }
+}
+.animate-swing {
+  animation: swing 12s ease-in-out infinite; /* slow swinging */
+}
+</style>
+
+
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2" data-aos="fade-up" data-aos-delay="900">
+            <div class="animate-bounce flex flex-col items-center">
+                <span class="text-sm mb-2">Scroll Down</span>
+                <i data-feather="chevron-down" class="w-6 h-6"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Operations Section -->
+    <section id="operations" class="relative py-20 bg-black bg-opacity-90">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    <span class="text-yellow-400">GLOBAL</span> OPERATIONS
+                </h2>
+                <p class="text-xl max-w-3xl mx-auto">
+                    Strategically located mines delivering high-grade mineral resources across continents
+                </p>
+            </div>
+            
+            <!-- Interactive Globe -->
+            <div class="relative h-96 w-full rounded-xl overflow-hidden mb-16" data-aos="zoom-in">
+                <div id="operations-globe" class="h-full w-full"></div>
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="bg-black bg-opacity-70 p-6 rounded-lg max-w-md" data-aos="fade-left">
+                        <h3 class="text-2xl font-bold text-yellow-400 mb-2">Active Mines</h3>
+                        <p class="mb-4">12 operational sites across 6 continents with 98% uptime</p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <div class="text-3xl font-bold text-yellow-400">15M</div>
+                                <div class="text-sm">Tons Extracted</div>
+                            </div>
+                            <div>
+                                <div class="text-3xl font-bold text-yellow-400">98%</div>
+                                <div class="text-sm">Safety Record</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mining Process Animation -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="bg-gray-900 bg-opacity-70 p-6 rounded-xl" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-48 mb-4">
+                        <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_bb9unkkg.json" background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></lottie-player>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-yellow-400">Exploration</h3>
+                    <p>Advanced geological surveys and AI-powered resource identification for maximum yield.</p>
+                </div>
+                <div class="bg-gray-900 bg-opacity-70 p-6 rounded-xl" data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-48 mb-4">
+                        <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_bb9unkkg.json" background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></lottie-player>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-yellow-400">Extraction</h3>
+                    <p>Automated drilling and robotic excavation systems minimizing environmental impact.</p>
+                </div>
+                <div class="bg-gray-900 bg-opacity-70 p-6 rounded-xl" data-aos="fade-up" data-aos-delay="500">
+                    <div class="h-48 mb-4">
+                        <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_bb9unkkg.json" background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></lottie-player>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-yellow-400">Processing</h3>
+                    <p>State-of-the-art refinement facilities with 99.9% material recovery efficiency.</p>
+                </div>
+                <div class="bg-gray-900 bg-opacity-70 p-6 rounded-xl" data-aos="fade-up" data-aos-delay="700">
+                    <div class="h-48 mb-4">
+                        <lottie-player src="https://lottie.host/5afd95b1-a3bb-4f3e-9c55-6639f7dc6b9e/bJDYKkKTc2.json" background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></lottie-player>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-yellow-400">Haulage</h3>
+                    <p>Autonomous trucks transporting ore efficiently across rugged terrain.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Parallax Section -->
+    <section id="technology" class="parallax-section py-32" style="background-image: url('http://static.photos/technology/1200x630/7');">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-black bg-opacity-80 p-10 rounded-xl backdrop-blur-sm" data-aos="fade-right">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    <span class="text-yellow-400">INNOVATIVE</span> TECHNOLOGY
+                </h2>
+                <p class="text-xl mb-8 max-w-3xl">
+                    We're redefining mining through autonomous systems, AI analytics, and quantum computing for resource optimization.
+                </p>
+                
+                <!-- Tech Stack Animation -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="text-center" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="h-24 mb-4">
+                            <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_bb9unkkg.json" background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></lottie-player>
+                        </div>
+                        <h4 class="font-bold">Autonomous Fleet</h4>
+                    </div>
+                    <div class="text-center" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="h-24 mb-4">
+                            <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_bb9unkkg.json" background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></lottie-player>
+                        </div>
+                        <h4 class="font-bold">AI Exploration</h4>
+                    </div>
+                    <div class="text-center" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="h-24 mb-4">
+                            <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_bb9unkkg.json" background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></lottie-player>
+                        </div>
+                        <h4 class="font-bold">Quantum Sensors</h4>
+                    </div>
+                    <div class="text-center" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="h-24 mb-4">
+                            <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_bb9unkkg.json" background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></lottie-player>
+                        </div>
+                        <h4 class="font-bold">Blockchain Tracking</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustainability Section -->
+    <section id="sustainability" class="py-20 bg-gradient-to-b from-gray-900 to-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    <span class="text-green-400">SUSTAINABLE</span> PRACTICES
+                </h2>
+                <p class="text-xl max-w-3xl mx-auto">
+                    Committed to environmental stewardship and community development
+                </p>
+            </div>
+            
+            <!-- Animated Sustainability Timeline -->
+            <div class="relative">
+                <div class="hidden md:block absolute left-1/2 h-full w-1 bg-gradient-to-b from-green-400 to-blue-500 transform -translate-x-1/2"></div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Left Items -->
+                    <div class="md:pr-16" data-aos="fade-right">
+                        <div class="relative mb-16 md:mb-32 pl-8 md:pl-0 md:pr-8">
+                            <div class="absolute md:right-0 md:left-auto left-0 top-0 h-6 w-6 rounded-full bg-green-400 border-4 border-gray-900 transform -translate-x-1/2 md:translate-x-1/2"></div>
+                            <div class="bg-gray-800 bg-opacity-70 p-6 rounded-xl backdrop-blur-sm">
+                                <h3 class="text-xl font-bold mb-2 text-green-400">Carbon Neutral by 2025</h3>
+                                <p>Implementing renewable energy solutions and carbon capture technologies across all operations.</p>
+                                <div class="mt-4 h-32">
+                                    <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_bb9unkkg.json" background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></lottie-player>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="relative mb-16 md:mb-32 pl-8 md:pl-0 md:pr-8">
+                            <div class="absolute md:right-0 md:left-auto left-0 top-0 h-6 w-6 rounded-full bg-green-400 border-4 border-gray-900 transform -translate-x-1/2 md:translate-x-1/2"></div>
+                            <div class="bg-gray-800 bg-opacity-70 p-6 rounded-xl backdrop-blur-sm">
+                                <h3 class="text-xl font-bold mb-2 text-green-400">Water Reclamation</h3>
+                                <p>Closed-loop water systems that recycle 95% of process water, protecting local watersheds.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Items -->
+                    <div class="md:pl-16" data-aos="fade-left">
+                        <div class="relative mb-16 md:mb-32 pl-8 md:pl-8">
+                            <div class="absolute left-0 top-0 h-6 w-6 rounded-full bg-green-400 border-4 border-gray-900 transform -translate-x-1/2"></div>
+                            <div class="bg-gray-800 bg-opacity-70 p-6 rounded-xl backdrop-blur-sm">
+                                <h3 class="text-xl font-bold mb-2 text-green-400">Biodiversity Programs</h3>
+                                <p>Comprehensive land rehabilitation and species protection initiatives at all mine sites.</p>
+                                <div class="mt-4 h-32">
+                                    <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_bb9unkkg.json" background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></lottie-player>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="relative mb-16 pl-8 md:pl-8">
+                            <div class="absolute left-0 top-0 h-6 w-6 rounded-full bg-green-400 border-4 border-gray-900 transform -translate-x-1/2"></div>
+                            <div class="bg-gray-800 bg-opacity-70 p-6 rounded-xl backdrop-blur-sm">
+                                <h3 class="text-xl font-bold mb-2 text-green-400">Community Investment</h3>
+                                <p>Over $50M annually invested in local education, healthcare, and infrastructure development.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    <span class="text-yellow-400">CONNECT</span> WITH US
+                </h2>
+                <p class="text-xl max-w-3xl mx-auto">
+                    Let's discuss how we can responsibly meet your mineral resource needs
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="bg-gray-800 bg-opacity-70 p-8 rounded-xl backdrop-blur-sm" data-aos="fade-right">
+                    <h3 class="text-2xl font-bold mb-6">Send Us a Message</h3>
+                    <form>
+                        <div class="mb-6">
+                            <label for="name" class="block text-sm font-medium mb-2">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                        </div>
+                        <div class="mb-6">
+                            <label for="email" class="block text-sm font-medium mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-sm font-medium mb-2">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Contact Info with Interactive Map -->
+                <div data-aos="fade-left">
+                    <div class="h-64 md:h-96 mb-8 rounded-xl overflow-hidden relative">
+                        <div id="contact-map" class="h-full w-full"></div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i data-feather="map-pin" class="w-5 h-5 text-yellow-400"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-bold">Headquarters</h4>
+                                <p class="text-gray-300">DADDS HQ | HRHR+62C, Mankralo St, Accra</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i data-feather="phone" class="w-5 h-5 text-yellow-400"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-bold">Phone</h4>
+                                <p class="text-gray-300">+233 24 153 7440</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i data-feather="mail" class="w-5 h-5 text-yellow-400"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-bold">Email</h4>
+                                <p class="text-gray-300">sambeckmining@gmail.com </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center">
+                        <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_bb9unkkg.json" background="transparent" speed="1" style="width: 40px; height: 40px;" loop autoplay></lottie-player>
+                        <span class="ml-2 text-xl font-bold">SamBeck Mining Ltd.</span>
+                    </div>
+                    <p class="mt-4 text-gray-400">Leading the future of responsible resource extraction.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors">Home</a></li>
+                        <li><a href="#operations" class="text-gray-400 hover:text-yellow-400 transition-colors">Operations</a></li>
+                        <li><a href="#technology" class="text-gray-400 hover:text-yellow-400 transition-colors">Technology</a></li>
+                        <li><a href="#sustainability" class="text-gray-400 hover:text-yellow-400 transition-colors">Sustainability</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-yellow-400 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors">Investor Relations</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors">Sustainability Report</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors">Newsroom</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors">
+                            <i data-feather="twitter" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors">
+                            <i data-feather="linkedin" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors">
+                            <i data-feather="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors">
+                            <i data-feather="youtube" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm">© 2025 SamBeack Mining Ltd. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-500 hover:text-yellow-400 text-sm transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-gray-500 hover:text-yellow-400 text-sm transition-colors">Terms of Service</a>
+                    <a href="#" class="text-gray-500 hover:text-yellow-400 text-sm transition-colors">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-yellow-500 text-black p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300 transform translate-y-4">
+        <i data-feather="arrow-up" class="w-5 h-5"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        
+        // Initialize Feather Icons
+        feather.replace();
+        
+        // Vanta.js Background
+        VANTA.GLOBE({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0xffaa00,
+            backgroundColor: 0x0,
+            size: 0.8
+        });
+        
+        // Operations Globe
+        VANTA.GLOBE({
+            el: "#operations-globe",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0xffaa00,
+            backgroundColor: 0x0,
+            size: 0.8
+        });
+        
+        // Contact Map
+        VANTA.NET({
+            el: "#contact-map",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0xffaa00,
+            backgroundColor: 0x111111,
+            points: 12.00,
+            maxDistance: 20.00,
+            spacing: 15.00
+        });
+        
+        // Back to Top Button
+        window.addEventListener('scroll', function() {
+            var backToTop = document.getElementById('back-to-top');
+            if (window.pageYOffset > 300) {
+                backToTop.classList.remove('opacity-0', 'invisible', 'translate-y-4');
+                backToTop.classList.add('opacity-100', 'visible', 'translate-y-0');
+            } else {
+                backToTop.classList.remove('opacity-100', 'visible', 'translate-y-0');
+                backToTop.classList.add('opacity-0', 'invisible', 'translate-y-4');
+            }
+        });
+        
+        document.getElementById('back-to-top').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</body>
+</html>
