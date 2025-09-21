@@ -55,6 +55,7 @@
             }
         }
     </style>
+    
 </head>
 
 <body class="font-sans antialiased text-gray-100 bg-black">
@@ -126,44 +127,207 @@
         </div>
     </section>
 
-    <!-- ===== SWIPEABLE CARD STRIP ===== -->
-    <section class="py-16 bg-black/90">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 text-yellow-400">Our Assets</h2>
+    <!-- ===== SWIPEABLE / CENTERED ASSETS CAROUSEL ===== -->
+<section class="py-16 bg-black/90">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-            <div class="card-strip">
-                <!-- Card 1 -->
-                <div class="card group relative w-[260px] h-[320px] bg-gradient-to-br from-yellow-50 to-gray-100 rounded-2xl shadow-2xl overflow-hidden">
-                    <div class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-yellow-400 via-orange-500 to-yellow-700 opacity-0 group-hover:opacity-100 blur-xl transition duration-500"></div>
-                    <div class="relative z-10 flex flex-col items-center justify-center h-full p-6">
-                        <img src="mining truck.jpeg" alt="Mining Truck" class="max-h-[140px] object-contain rounded-xl shadow-lg transform transition-transform duration-700 group-hover:scale-110">
-                        <h3 class="mt-4 text-lg font-bold text-gray-800 group-hover:text-yellow-700 transition">Mining Truck</h3>
-                        <p class="text-sm text-gray-500 text-center mt-1">Heavy-duty mining vehicle</p>
-                    </div>
-                </div>
+    <h2 class="relative z-20 text-2xl md:text-3xl font-bold text-center mb-10 
+            text-white sm:text-transparent bg-clip-text 
+            bg-gradient-to-r from-purple-400 to-pink-400">
+    Our Assets
+</h2>
 
-                <!-- Card 2 -->
-                <div class="card group relative w-[260px] h-[320px] bg-gradient-to-br from-blue-50 to-gray-100 rounded-2xl shadow-2xl overflow-hidden">
-                    <div class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-blue-400 via-cyan-500 to-blue-700 opacity-0 group-hover:opacity-100 blur-xl transition duration-500"></div>
-                    <div class="relative z-10 flex flex-col items-center justify-center h-full p-6">
-                        <img src="excavator.jpg" alt="Excavator" class="max-h-[140px] object-contain rounded-xl shadow-lg transform transition-transform duration-700 group-hover:scale-110">
-                        <h3 class="mt-4 text-lg font-bold text-gray-800 group-hover:text-blue-700 transition">Excavator</h3>
-                        <p class="text-sm text-gray-500 text-center mt-1">Digging & extraction machine</p>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="card group relative w-[260px] h-[320px] bg-gradient-to-br from-green-50 to-gray-100 rounded-2xl shadow-2xl overflow-hidden">
-                    <div class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-green-400 via-emerald-500 to-green-700 opacity-0 group-hover:opacity-100 blur-xl transition duration-500"></div>
-                    <div class="relative z-10 flex flex-col items-center justify-center h-full p-6">
-                        <img src="mining-field.jpeg" alt="Mining Field" class="max-h-[140px] object-contain rounded-xl shadow-lg transform transition-transform duration-700 group-hover:scale-110">
-                        <h3 class="mt-4 text-lg font-bold text-gray-800 group-hover:text-green-700 transition">Mining Field</h3>
-                        <p class="text-sm text-gray-500 text-center mt-1">Open-pit mining operations</p>
-                    </div>
-                </div>
+    <!-- wrapper keeps swing animation but centers content -->
+    <div class="overflow-hidden">
+      <div class="flex justify-center">
+        <div class="swing-wrapper flex gap-6">
+          <!-- Card 1 -->
+          <div class="group card-pulse relative w-[260px] h-[320px] bg-gradient-to-br from-yellow-50 to-gray-100 rounded-2xl shadow-2xl overflow-hidden">
+            <div class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-yellow-400 via-orange-500 to-yellow-700 opacity-0 group-hover:opacity-100 blur-xl transition duration-500"></div>
+            <div class="relative z-10 flex flex-col items-center justify-center h-full p-6">
+              <img src="mining truck.jpeg" alt="Mining Truck" class="max-h-[140px] object-contain rounded-xl shadow-lg transform transition-transform duration-700 group-hover:scale-110">
+              <h3 class="mt-4 text-lg font-bold text-gray-800 group-hover:text-yellow-700 transition">Mining Truck</h3>
+              <p class="text-sm text-gray-500 text-center mt-1">Heavy-duty mining vehicle</p>
             </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="group card-pulse relative w-[260px] h-[320px] bg-gradient-to-br from-blue-50 to-gray-100 rounded-2xl shadow-2xl overflow-hidden">
+            <div class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-blue-400 via-cyan-500 to-blue-700 opacity-0 group-hover:opacity-100 blur-xl transition duration-500"></div>
+            <div class="relative z-10 flex flex-col items-center justify-center h-full p-6">
+              <img src="excavator.jpg" alt="Excavator" class="max-h-[140px] object-contain rounded-xl shadow-lg transform transition-transform duration-700 group-hover:scale-110">
+              <h3 class="mt-4 text-lg font-bold text-gray-800 group-hover:text-blue-700 transition">Excavator</h3>
+              <p class="text-sm text-gray-500 text-center mt-1">Digging & extraction machine</p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="group card-pulse relative w-[260px] h-[320px] bg-gradient-to-br from-green-50 to-gray-100 rounded-2xl shadow-2xl overflow-hidden">
+            <div class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-green-400 via-emerald-500 to-green-700 opacity-0 group-hover:opacity-100 blur-xl transition duration-500"></div>
+            <div class="relative z-10 flex flex-col items-center justify-center h-full p-6">
+              <img src="mining-field.jpeg" alt="Mining Field" class="max-h-[140px] object-contain rounded-xl shadow-lg transform transition-transform duration-700 group-hover:scale-110">
+              <h3 class="mt-4 text-lg font-bold text-gray-800 group-hover:text-green-700 transition">Mining Field</h3>
+              <p class="text-sm text-gray-500 text-center mt-1">Open-pit mining operations</p>
+            </div>
+          </div>
+
         </div>
-    </section>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+/* ---- gentle left-right swing ---- */
+.swing-wrapper { animation: swing 12s ease-in-out infinite; }
+@keyframes swing {
+  0%   { transform: translateX(0); }
+  25%  { transform: translateX(-40px); }
+  50%  { transform: translateX(0); }
+  75%  { transform: translateX(40px); }
+  100% { transform: translateX(0); }
+}
+/* subtle pulse on hover */
+.card-pulse:hover { animation: pulse .6s ease-in-out; }
+@keyframes pulse {
+  0%  { transform: scale(1); }
+  50% { transform: scale(1.03); }
+  100%{ transform: scale(1); }
+}
+</style>
+
+<!-- ===== TEAM / WORKERS STRIP (flashy) ===== -->
+<section class="py-16 bg-gradient-to-b from-black to-gray-900">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <h2 class="relative z-20 text-2xl md:text-3xl font-bold text-center mb-10 
+            text-white sm:text-transparent bg-clip-text 
+            bg-gradient-to-r from-purple-400 to-pink-400">
+    Meet Our Experts
+</h2>
+
+    <div class="flex justify-center">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 place-items-center">
+
+        <!-- Worker 1 -->
+        <div class="worker-card">
+          <div class="card-glow"></div>
+          <img src="images\SAMMY.jpeg" alt="Worker 1" class="worker-img">
+          <div class="worker-info">
+            <h3 class="text-lg font-bold text-white">Obeng Samuel Sarpong</h3>
+            <p class="text-sm text-gray-300">Managing Director (MD) & President</p>
+          </div>
+        </div>
+
+        <!-- Worker 2 -->
+        <div class="worker-card">
+          <div class="card-glow"></div>
+          <img src="images\chief.jpg" alt="Worker 2" class="worker-img">
+          <div class="worker-info">
+            <h3 class="text-lg font-bold text-white">Baba Kwame Trevor Lloyd Beckford EFS CI</h3>
+            <p class="text-sm text-gray-300">Chief Executive Officer (CEO)</p>
+          </div>
+        </div>
+
+        <!-- Worker 3 -->
+        <div class="worker-card">
+          <div class="card-glow"></div>
+          <img src="images\Spark.png" alt="Worker 3" class="worker-img">
+          <div class="worker-info">
+            <h3 class="text-lg font-bold text-white">Spark Dzakpasu</h3>
+            <p class="text-sm text-gray-300">Chief Operation Officer</p>
+          </div>
+        </div>
+
+       
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+/* ---- container keeps perspective ---- */
+.worker-card {
+  position: relative;
+  width: 260px;
+  height: 320px;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  background: #111;
+  transform-style: preserve-3d;
+  transition: transform .5s ease, box-shadow .5s ease;
+}
+/* rainbow glow that follows mouse */
+.worker-card .card-glow {
+  position: absolute;
+  inset: -100%;
+  background: conic-gradient(from 180deg at 50% 50%, #ff0080, #ff8c00, #40e0d0, #ff0080);
+  animation: rotate 4s linear infinite;
+  opacity: 0;
+  transition: opacity .4s;
+}
+.worker-card:hover .card-glow { opacity: .75; }
+@keyframes rotate {
+  to { transform: rotate(360deg); }
+}
+/* image zoom + grayscale -> color */
+.worker-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%) brightness(.9);
+  transition: transform .5s, filter .5s;
+}
+.worker-card:hover .worker-img {
+  transform: scale(1.15);
+  filter: grayscale(0%) brightness(1);
+}
+/* info block slides up */
+.worker-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem 1.25rem;
+  background: linear-gradient(to top, rgba(0,0,0,.85), transparent);
+  transform: translateY(100%);
+  transition: transform .4s ease;
+}
+.worker-card:hover .worker-info {
+  transform: translateY(0);
+}
+/* 3-D tilt on mouse move */
+.worker-card {
+  transform: perspective(1000px) rotateX(0) rotateY(0);
+}
+.worker-card:hover {
+  transform: perspective(1000px) rotateX(var(--x-rot, 0)) rotateY(var(--y-rot, 0)) scale(1.05);
+  box-shadow: 0 25px 50px -12px rgba(255, 255, 255, 0.15);
+}
+</style>
+
+<script>
+/* ---- mouse-tracked 3-D tilt ---- */
+document.querySelectorAll('.worker-card').forEach(card => {
+  card.addEventListener('mousemove', e => {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const { width, height } = rect;
+    const xRot = (y / height - 0.5) * -20;  // -10deg to +10deg
+    const yRot = (x / width - 0.5) * 20;   // -10deg to +10deg
+    card.style.setProperty('--x-rot', `${xRot}deg`);
+    card.style.setProperty('--y-rot', `${yRot}deg`);
+  });
+  card.addEventListener('mouseleave', () => {
+    card.style.setProperty('--x-rot', '0deg');
+    card.style.setProperty('--y-rot', '0deg');
+  });
+});
+</script>
 
     <!-- ===== OPERATIONS SECTION ===== -->
     <section id="operations" class="py-20 bg-black/90">
