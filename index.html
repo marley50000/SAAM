@@ -7,6 +7,7 @@
     <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <a href="gallery.html" class="text-white hover:text-yellow-400">Gallery</a>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
@@ -76,8 +77,8 @@
                 <!-- Desktop links -->
                 <div class="hidden md:flex space-x-6 lg:space-x-8">
                     <a href="#operations" class="text-white hover:text-yellow-400 px-3 py-2 text-sm font-medium transition-colors">Operations</a>
-                    <a href="#technology" class="text-white hover:text-yellow-400 px-3 py-2 text-sm font-medium transition-colors">Technology</a>
-                    <a href="#sustainability" class="text-white hover:text-yellow-400 px-3 py-2 text-sm font-medium transition-colors">Sustainability</a>
+                    <a href="gallery.html" class="text-white hover:text-yellow-400 px-3 py-2 text-sm font-medium transition-colors">Gallery</a>
+
                     <a href="#contact" class="text-white hover:text-yellow-400 px-3 py-2 text-sm font-medium transition-colors">Contact</a>
                 </div>
 
@@ -92,8 +93,8 @@
             <!-- Mobile menu -->
             <div id="mobile-menu" class="hidden md:hidden pb-4">
                 <a href="#operations" class="block text-white hover:text-yellow-400 px-3 py-2 text-base">Operations</a>
-                <a href="#technology" class="block text-white hover:text-yellow-400 px-3 py-2 text-base">Technology</a>
-                <a href="#sustainability" class="block text-white hover:text-yellow-400 px-3 py-2 text-base">Sustainability</a>
+                <a href="gallery.html" class="block text-white hover:text-yellow-400 px-3 py-2 text-base">Gallery</a>
+               
                 <a href="#contact" class="block text-white hover:text-yellow-400 px-3 py-2 text-base">Contact</a>
             </div>
         </div>
@@ -197,56 +198,51 @@
 }
 </style>
 
-<!-- ===== TEAM / WORKERS STRIP (flashy) ===== -->
+<!-- ===== TEAM / WORKERS (always centred) ===== -->
 <section class="py-16 bg-gradient-to-b from-black to-gray-900">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-    <h2 class="relative z-20 text-2xl md:text-3xl font-bold text-center mb-10 
-            text-white sm:text-transparent bg-clip-text 
-            bg-gradient-to-r from-purple-400 to-pink-400">
-    Meet Our Experts
-</h2>
+    <h2 class="text-2xl md:text-3xl font-bold text-center mb-10 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
+      Meet Our Experts
+    </h2>
 
-    <div class="flex justify-center">
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 place-items-center">
-
-        <!-- Worker 1 -->
-        <div class="worker-card">
-          <div class="card-glow"></div>
-          <img src="images\SAMMY.jpeg" alt="Worker 1" class="worker-img">
-          <div class="worker-info">
-            <h3 class="text-lg font-bold text-white">Obeng Samuel Sarpong</h3>
-            <p class="text-sm text-gray-300">Managing Director (MD) & President</p>
-          </div>
+    <!-- flexbox keeps cards centred even when < 4 -->
+    <div class="flex flex-wrap justify-center gap-8">
+      <!-- Worker 1 -->
+      <div class="worker-card">
+        <div class="card-glow"></div>
+        <img src="images/SAMMY.jpeg" alt="Obeng Samuel Sarpong" class="worker-img">
+        <div class="worker-info">
+          <h3 class="text-lg font-bold text-white drop-shadow-lg">Obeng Samuel Sarpong</h3>
+          <p class="text-sm text-gray-300 drop-shadow-lg">Managing Director (MD) & President</p>
         </div>
+      </div>
 
-        <!-- Worker 2 -->
-        <div class="worker-card">
-          <div class="card-glow"></div>
-          <img src="images\chief.jpg" alt="Worker 2" class="worker-img">
-          <div class="worker-info">
-            <h3 class="text-lg font-bold text-white">Baba Kwame Trevor Lloyd Beckford EFS CI</h3>
-            <p class="text-sm text-gray-300">Chief Executive Officer (CEO)</p>
-          </div>
+      <!-- Worker 2 -->
+      <div class="worker-card">
+        <div class="card-glow"></div>
+        <img src="images/chief.jpg" alt="Baba Kwame Trevor Lloyd Beckford EFS CI" class="worker-img">
+        <div class="worker-info">
+          <h3 class="text-lg font-bold text-white">Baba Kwame Trevor Lloyd Beckford EFS CI</h3>
+          <p class="text-sm text-gray-300">Chief Executive Officer (CEO)</p>
         </div>
+      </div>
 
-        <!-- Worker 3 -->
-        <div class="worker-card">
-          <div class="card-glow"></div>
-          <img src="images\Spark.png" alt="Worker 3" class="worker-img">
-          <div class="worker-info">
-            <h3 class="text-lg font-bold text-white">Spark Dzakpasu</h3>
-            <p class="text-sm text-gray-300">Chief Operation Officer</p>
-          </div>
+      <!-- Worker 3 -->
+      <div class="worker-card">
+        <div class="card-glow"></div>
+        <img src="images/Spark.png" alt="Spark Dzakpasu" class="worker-img">
+        <div class="worker-info">
+          <h3 class="text-lg font-bold text-white">Spark Dzakpasu</h3>
+          <p class="text-sm text-gray-300">Chief Operation Officer</p>
         </div>
-
-       
-
       </div>
     </div>
 
   </div>
 </section>
+
+
 
 <style>
 /* ---- container keeps perspective ---- */
@@ -273,19 +269,17 @@
 @keyframes rotate {
   to { transform: rotate(360deg); }
 }
-/* image zoom + grayscale -> color */
+/* FULL-COLOUR image + zoom */
 .worker-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: grayscale(100%) brightness(.9);
-  transition: transform .5s, filter .5s;
+  transition: transform .5s;
 }
 .worker-card:hover .worker-img {
   transform: scale(1.15);
-  filter: grayscale(0%) brightness(1);
 }
-/* info block slides up */
+/* info block ALWAYS visible */
 .worker-info {
   position: absolute;
   bottom: 0;
@@ -293,11 +287,6 @@
   right: 0;
   padding: 1rem 1.25rem;
   background: linear-gradient(to top, rgba(0,0,0,.85), transparent);
-  transform: translateY(100%);
-  transition: transform .4s ease;
-}
-.worker-card:hover .worker-info {
-  transform: translateY(0);
 }
 /* 3-D tilt on mouse move */
 .worker-card {
@@ -306,6 +295,10 @@
 .worker-card:hover {
   transform: perspective(1000px) rotateX(var(--x-rot, 0)) rotateY(var(--y-rot, 0)) scale(1.05);
   box-shadow: 0 25px 50px -12px rgba(255, 255, 255, 0.15);
+}
+.worker-info h3,
+.worker-info p {
+  text-shadow: 0 2px 4px rgba(0,0,0,.7);
 }
 </style>
 
@@ -369,7 +362,7 @@ document.querySelectorAll('.worker-card').forEach(card => {
     </section>
 
     <!-- ===== TECHNOLOGY PARALLAX ===== -->
-    <section id="technology" class="parallax-section py-20 md:py-32" style="background-image:url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1350&q=80'); background-attachment:fixed; background-size:cover; background-position:center;">
+    <section id="gallery.html" class="parallax-section py-20 md:py-32" style="background-image:url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1350&q=80'); background-attachment:fixed; background-size:cover; background-position:center;">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-black/80 backdrop-blur-sm p-8 rounded-xl" data-aos="fade-right">
                 <h2 class="text-3xl md:text-5xl font-bold mb-6"><span class="text-yellow-400">INNOVATIVE</span> TECHNOLOGY</h2>
@@ -528,8 +521,8 @@ document.querySelectorAll('.worker-card').forEach(card => {
                     <h4 class="font-bold mb-3">Quick Links</h4>
                     <ul class="space-y-2 text-sm">
                         <li><a href="#operations" class="text-gray-400 hover:text-yellow-400">Operations</a></li>
-                        <li><a href="#technology" class="text-gray-400 hover:text-yellow-400">Technology</a></li>
-                        <li><a href="#sustainability" class="text-gray-400 hover:text-yellow-400">Sustainability</a></li>
+                        <li><a href="gallery.html" class="text-gray-400 hover:text-yellow-400">Gallery</a></li>
+            
                         <li><a href="#contact" class="text-gray-400 hover:text-yellow-400">Contact</a></li>
                     </ul>
                 </div>
@@ -609,3 +602,11 @@ document.querySelectorAll('.worker-card').forEach(card => {
     </script>
 </body>
 </html>
+
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@3"></script>
+<script>
+  tsParticles.load("hero-bg", { particles: { number: { value: 40 }, color:{value:"#FFD700"}, opacity:{value:.2}, size:{value:2}, move:{speed:1} } });
+</script>
+<div id="hero-bg" class="absolute inset-0 -z-10"></div>
+<link rel="icon" type="image/png" href="/SamBeck Mining.png" />
+<meta name="theme-color" content="#111111" />
