@@ -208,17 +208,9 @@
 
     <!-- flexbox keeps cards centred even when < 4 -->
     <div class="flex flex-wrap justify-center gap-8">
+     
+     
       <!-- Worker 1 -->
-      <div class="worker-card">
-        <div class="card-glow"></div>
-        <img src="images/SAMMY.jpeg" alt="Obeng Samuel Sarpong" class="worker-img">
-        <div class="worker-info">
-          <h3 class="text-lg font-bold text-white drop-shadow-lg">Obeng Samuel Sarpong</h3>
-          <p class="text-sm text-gray-300 drop-shadow-lg">Managing Director (MD) & President</p>
-        </div>
-      </div>
-
-      <!-- Worker 2 -->
       <div class="worker-card">
         <div class="card-glow"></div>
         <img src="images/chief.jpg" alt="Baba Kwame Trevor Lloyd Beckford EFS CI" class="worker-img">
@@ -227,6 +219,19 @@
           <p class="text-sm text-gray-300">Chief Executive Officer (CEO)</p>
         </div>
       </div>
+     
+     
+        <!-- Worker 2 -->
+      <div class="worker-card">
+        <div class="card-glow"></div>
+        <img src="images/SAMMY.png" alt="Obeng Samuel Sarpong" class="worker-img">
+        <div class="worker-info">
+          <h3 class="text-lg font-bold text-white drop-shadow-lg">Obeng Samuel Sarpong</h3>
+          <p class="text-sm text-gray-300 drop-shadow-lg">Managing Director (MD) & President</p>
+        </div>
+      </div>
+
+     
 
       <!-- Worker 3 -->
       <div class="worker-card">
@@ -336,33 +341,51 @@ document.querySelectorAll('.worker-card').forEach(card => {
             </div>
 
             <!-- Process grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="bg-gray-900/70 p-6 rounded-xl" data-aos="fade-up" data-aos-delay="100">
-                    <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_bb9unkkg.json" background="transparent" speed="1" class="w-full h-40" loop autoplay></lottie-player>
-                    <h3 class="text-lg font-bold mb-2 text-yellow-400 mt-4">Exploration</h3>
-                    <p class="text-sm">AI-powered resource identification for maximum yield.</p>
-                </div>
-                <div class="bg-gray-900/70 p-6 rounded-xl" data-aos="fade-up" data-aos-delay="200">
-                    <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_bb9unkkg.json" background="transparent" speed="1" class="w-full h-40" loop autoplay></lottie-player>
-                    <h3 class="text-lg font-bold mb-2 text-yellow-400 mt-4">Extraction</h3>
-                    <p class="text-sm">Automated drilling and robotic excavation systems.</p>
-                </div>
-                <div class="bg-gray-900/70 p-6 rounded-xl" data-aos="fade-up" data-aos-delay="300">
-                    <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_bb9unkkg.json" background="transparent" speed="1" class="w-full h-40" loop autoplay></lottie-player>
-                    <h3 class="text-lg font-bold mb-2 text-yellow-400 mt-4">Processing</h3>
-                    <p class="text-sm">State-of-the-art refinement with 99.9 % recovery.</p>
-                </div>
-                <div class="bg-gray-900/70 p-6 rounded-xl" data-aos="fade-up" data-aos-delay="400">
-                    <lottie-player src="https://lottie.host/5afd95b1-a3bb-4f3e-9c55-6639f7dc6b9e/bJDYKkKTc2.json" background="transparent" speed="1" class="w-full h-40" loop autoplay></lottie-player>
-                    <h3 class="text-lg font-bold mb-2 text-yellow-400 mt-4">Haulage</h3>
-                    <p class="text-sm">Autonomous trucks transporting ore efficiently.</p>
-                </div>
-            </div>
-        </div>
+           <!-- Process grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <!-- 1. Exploration -->
+    <div class="bg-gray-900/70 p-6 rounded-xl" data-aos="fade-up" data-aos-delay="100">
+        <img src="images\Exploration.jpg" alt="Exploration" class="w-full h-40 object-cover rounded-lg">
+        <h3 class="text-lg font-bold mb-2 text-yellow-400 mt-4">Exploration</h3>
+        <p class="text-sm">AI-powered resource identification for maximum yield.</p>
+    </div>
+
+    <!-- 2. Extraction -->
+    <div class="bg-gray-900/70 p-6 rounded-xl" data-aos="fade-up" data-aos-delay="200">
+        <img src="images\mining.jpg" alt="Extraction" class="w-full h-40 object-cover rounded-lg">
+        <h3 class="text-lg font-bold mb-2 text-yellow-400 mt-4">Extraction</h3>
+        <p class="text-sm">Automated drilling and robotic excavation systems.</p>
+    </div>
+
+    <!-- 3. Processing -->
+    <div class="bg-gray-900/70 p-6 rounded-xl" data-aos="fade-up" data-aos-delay="300">
+        <img src="images\Processing.jpg" alt="Processing" class="w-full h-40 object-cover rounded-lg">
+        <h3 class="text-lg font-bold mb-2 text-yellow-400 mt-4">Processing</h3>
+        <p class="text-sm">State-of-the-art refinement with 99.9 % recovery.</p>
+    </div>
+
+    <!-- 4. Haulage -->
+    <div class="bg-gray-900/70 p-6 rounded-xl" data-aos="fade-up" data-aos-delay="400">
+        <img src="images\HAULAGE.jpg" alt="Haulage" class="w-full h-40 object-cover rounded-lg">
+        <h3 class="text-lg font-bold mb-2 text-yellow-400 mt-4">Haulage</h3>
+        <p class="text-sm">Autonomous trucks transporting ore efficiently.</p>
+    </div>
+</div>
     </section>
 
     <!-- ===== TECHNOLOGY PARALLAX ===== -->
-    <section id="gallery.html" class="parallax-section py-20 md:py-32" style="background-image:url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1350&q=80'); background-attachment:fixed; background-size:cover; background-position:center;">
+   <!-- Normal image -->
+
+
+<!-- Same image as a background -->
+<section 
+  style="background-image: url('images/Mine bg.png'); 
+         background-attachment: fixed; 
+         background-size: cover; 
+         background-position: center; 
+         height: 400px;">
+</section>
+
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-black/80 backdrop-blur-sm p-8 rounded-xl" data-aos="fade-right">
                 <h2 class="text-3xl md:text-5xl font-bold mb-6"><span class="text-yellow-400">INNOVATIVE</span> TECHNOLOGY</h2>
@@ -574,7 +597,7 @@ document.querySelectorAll('.worker-card').forEach(card => {
         btn.addEventListener('click', () => menu.classList.toggle('hidden'));
 
         /* ---- vanta backgrounds ---- */
-        VANTA.GLOBE({ el: "#vanta-bg", mouseControls: true, touchControls: true, gyroControls: false, minHeight: 200, minWidth: 200, scale: 1.0, scaleMobile: 1.0, color: 0xffaa00, backgroundColor: 0x0, size: 0.8 });
+      
         VANTA.GLOBE({ el: "#operations-globe", mouseControls: true, touchControls: true, gyroControls: false, minHeight: 200, minWidth: 200, scale: 1.0, scaleMobile: 1.0, color: 0xffaa00, backgroundColor: 0x0, size: 0.8 });
         VANTA.NET({ el: "#contact-map", mouseControls: true, touchControls: true, gyroControls: false, minHeight: 200, minWidth: 200, scale: 1.0, scaleMobile: 1.0, color: 0xffaa00, backgroundColor: 0x111111, points: 12.00, maxDistance: 20.00, spacing: 15.00 });
 
