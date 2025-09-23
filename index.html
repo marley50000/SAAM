@@ -7,7 +7,7 @@
     <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <a href="gallery.html" class="text-white hover:text-yellow-400">Gallery</a>
+   
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
@@ -224,7 +224,7 @@
         <!-- Worker 2 -->
       <div class="worker-card">
         <div class="card-glow"></div>
-        <img src="images/SAMMY.png" alt="Obeng Samuel Sarpong" class="worker-img">
+        <img src="images/sam.png" alt="Obeng Samuel Sarpong" class="worker-img">
         <div class="worker-info">
           <h3 class="text-lg font-bold text-white drop-shadow-lg">Obeng Samuel Sarpong</h3>
           <p class="text-sm text-gray-300 drop-shadow-lg">Managing Director (MD) & President</p>
@@ -386,32 +386,57 @@ document.querySelectorAll('.worker-card').forEach(card => {
          height: 400px;">
 </section>
 
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-black/80 backdrop-blur-sm p-8 rounded-xl" data-aos="fade-right">
-                <h2 class="text-3xl md:text-5xl font-bold mb-6"><span class="text-yellow-400">INNOVATIVE</span> TECHNOLOGY</h2>
-                <p class="text-lg md:text-xl mb-8 max-w-3xl">Redefining mining through autonomous systems, AI analytics and quantum computing.</p>
+        <section>
+  <section>
+ <section>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="bg-black/80 backdrop-blur-sm p-8 rounded-xl" data-aos="fade-right">
+      <h2 class="text-3xl md:text-5xl font-bold mb-6">
+        <span class="text-yellow-400">INNOVATIVE</span> TECHNOLOGY
+      </h2>
+      <p class="text-lg md:text-xl mb-8 max-w-3xl">
+        Redefining mining through autonomous systems, AI analytics and quantum computing.
+      </p>
 
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                    <div class="text-center" data-aos="zoom-in" data-aos-delay="100">
-                        <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_bb9unkkg.json" background="transparent" speed="1" class="w-full h-24" loop autoplay></lottie-player>
-                        <h4 class="font-bold mt-2">Autonomous Fleet</h4>
-                    </div>
-                    <div class="text-center" data-aos="zoom-in" data-aos-delay="200">
-                        <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_bb9unkkg.json" background="transparent" speed="1" class="w-full h-24" loop autoplay></lottie-player>
-                        <h4 class="font-bold mt-2">AI Exploration</h4>
-                    </div>
-                    <div class="text-center" data-aos="zoom-in" data-aos-delay="300">
-                        <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_bb9unkkg.json" background="transparent" speed="1" class="w-full h-24" loop autoplay></lottie-player>
-                        <h4 class="font-bold mt-2">Quantum Sensors</h4>
-                    </div>
-                    <div class="text-center" data-aos="zoom-in" data-aos-delay="400">
-                        <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_bb9unkkg.json" background="transparent" speed="1" class="w-full h-24" loop autoplay></lottie-player>
-                        <h4 class="font-bold mt-2">Blockchain Tracking</h4>
-                    </div>
-                </div>
-            </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <!-- Autonomous Fleet -->
+        <div class="text-center" data-aos="zoom-in" data-aos-delay="100">
+          <img src="images\artificial-intelligence.png"
+               alt="Autonomous Fleet"
+               class="mx-auto h-24 w-auto object-contain">
+          <h4 class="font-bold mt-2">Autonomous Fleet</h4>
         </div>
-    </section>
+
+        <!-- AI Exploration -->
+        <div class="text-center" data-aos="zoom-in" data-aos-delay="200">
+          <img src="https://cdn-icons-png.flaticon.com/512/4712/4712100.png"
+               alt="AI Exploration"
+               class="mx-auto h-24 w-auto object-contain">
+          <h4 class="font-bold mt-2">AI Exploration</h4>
+        </div>
+
+        <!-- Quantum Sensors -->
+        <div class="text-center" data-aos="zoom-in" data-aos-delay="300">
+          <img src="images\gallery\image.png"
+               alt="Quantum Sensors"
+               class="mx-auto h-24 w-auto object-contain">
+          <h4 class="font-bold mt-2">Quantum Sensors</h4>
+        </div>
+
+        <!-- Blockchain Tracking -->
+        <div class="text-center" data-aos="zoom-in" data-aos-delay="400">
+          <img src="https://cdn-icons-png.flaticon.com/512/875/875209.png"
+               alt="Blockchain Tracking"
+               class="mx-auto h-24 w-auto object-contain">
+          <h4 class="font-bold mt-2">Blockchain Tracking</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
 
     <!-- ===== SUSTAINABILITY ===== -->
     <section id="sustainability" class="py-20 bg-gradient-to-b from-gray-900 to-black">
@@ -535,8 +560,11 @@ document.querySelectorAll('.worker-card').forEach(card => {
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
                 <div class="col-span-2 md:col-span-1">
                     <div class="flex items-center">
-                        <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_bb9unkkg.json" background="transparent" speed="1" class="w-10 h-10" loop autoplay></lottie-player>
-                        <span class="ml-2 text-lg font-bold">SamBeck Mining Ltd.</span>
+                        <img src="images/logo.png" 
+     alt="images\SamBeck Logo.png" 
+     class="w-5 h-5 object-contain inline-block">
+<span class="ml-2 text-lg font-bold">SamBeck Mining Ltd.</span>
+
                     </div>
                     <p class="text-gray-400 text-sm mt-2">Leading the future of responsible resource extraction.</p>
                 </div>
